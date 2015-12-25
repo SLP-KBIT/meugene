@@ -1,18 +1,15 @@
-<h1>$B$a$&$a$&8l%8%'%M%l!<%?!<(B</h1>
-<h1>meumeu lang generater</h1>
+<h1>芽兎めう語ジェネレーター</h1>
 
-<%= form_for @meumeu, url => {:action => 'index'} do |f| %>
-
-<p>
-<%= f.label :input_text, "input" %>
-<%= f.text_field :input_text %>
-</p>
+<%= form_tag("/meugene") do %>  <%#:url => {:action => '/meugene/index'} do |f| %>
 
 <p>
-<%= f.submit %>
+<%#= f.label :input_text, "input" %>
+<%#= f.text_field :input_text %>
+<%#= f.submit %>
+<%= label_tag(:input_text) %>
+<%= text_field_tag(:input_text) %>
+<%= submit_tag("convert") %>
 </p>
 
 <% end %>
 
-<%= if @meumeu %>
-<% end %>
