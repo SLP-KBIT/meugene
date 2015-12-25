@@ -1,0 +1,18 @@
+<h1>めうめう語ジェネレーター</h1>
+<h1>meumeu lang generater</h1>
+
+<%= form_for @meumeu, url => {:action => 'index'} do |f| %>
+
+<p>
+<%= f.label :input_text, "input" %>
+<%= f.text_field :input_text %>
+</p>
+
+<p>
+<%= f.submit %>
+</p>
+
+<% end %>
+
+<%= if @meumeu %>
+<% end %>

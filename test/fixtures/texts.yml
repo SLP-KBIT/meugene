@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  input_text: MyString
+  meu_text: MyString
+
+two:
+  input_text: MyString
+  meu_text: MyString
