@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :meugene
+  resources :meugenes
+  root 'meugenes#index'
+  # post 'meugene/index' => 'meugene#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
