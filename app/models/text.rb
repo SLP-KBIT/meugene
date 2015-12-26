@@ -258,6 +258,6 @@ class Text < ActiveRecord::Base
       str << n
     end
     
-    return text
+    return str
   end
 end
