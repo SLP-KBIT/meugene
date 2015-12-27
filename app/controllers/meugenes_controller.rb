@@ -10,7 +10,8 @@ class MeugenesController < ApplicationController
     redirect_to meugene_path(1)
   end
   def show
-    @text = Text.last[:meu_text]
+    @input_text = Text.last[:input_text]
+    @meu_text = Text.last[:meu_text]
   end
 
   private
